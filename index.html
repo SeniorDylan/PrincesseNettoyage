@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Princesse Net | Entreprise de Nettoyage à Quimper</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- En-tête / Navigation -->
+    <header>
+        <div class="logo">
+            <h1>👑 Princesse Net</h1>
+            <p>Nettoyage à Quimper et alentours (Finistère Sud)</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Nos Services</a></li>
+                <li><a href="#galerie">Réalisations</a></li>
+                <li><a href="#rdv" class="btn-primary">Prendre RDV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Hero -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h2>Donnez de l'éclat à vos espaces !</h2>
+            <p>Services de nettoyage professionnel pour particuliers et professionnels à Quimper et ses alentours (Finistère Sud).</p>
+            <a href="#rdv" class="btn-hero">Demander un Devis Gratuit</a>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services-section">
+        <h2>Nos Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>🏠 Entretien Privatif & Particuliers</h3>
+                <p>Ménage régulier ou ponctuel, nettoyage approfondi d'appartements et maisons meublés.</p>
+            </div>
+            <div class="service-card">
+                <h3>🔨 Nettoyage Fin de Chantier</h3>
+                <p>Remise en état complète après travaux ou fin de location avec réactivité et rigueur.</p>
+            </div>
+            <div class="service-card">
+                <h3>🪟 Vitrerie & Extérieurs</h3>
+                <p>Nettoyage complet de fenêtres, baies vitrées, vérandas et abords extérieurs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galerie photos -->
+    <section id="galerie" class="galerie-section">
+        <h2>Nos Réalisations</h2>
+        <p>Aperçu du soin apporté à nos prestations à Quimper</p>
+
+        <div class="galerie-grid">
+
+            <div class="galerie-item">
+                <img src="gallerie/litlit.JPG" alt="Chambre impeccablement dressée">
+                <span>Ménage de Fin de Séjour</span>
+            </div>
+            <div class="galerie-item">
+                <img src="gallerie/aManger.JPG" alt="Espace salle à manger et cuisine propre">
+                <span>Nettoyage d'Intérieur</span>
+            </div>
+            <div class="galerie-item">
+                <img src="gallerie/salon.JPG" alt="Salon propre et rangé">
+                <span>Remise en État</span>
+            </div>
+            <div class="galerie-item">
+                <img src="gallerie/litDouble.JPG" alt="Chambre double rangée">
+                <span>Entretien Logement</span>
+            </div>
+            <div class="galerie-item">
+                <img src="gallerie/vitre2.JPG" alt="Nettoyage Baie Vitrée et Véranda">
+                <span>Vitrerie & Véranda</span>
+            </div>
+            <div class="galerie-item">
+                <img src="gallerie/vitre.JPG" alt="Fenêtre et façade extérieures nettoyées">
+                <span>Vitres Extérieures</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulaire de Prise de RDV -->
+    <section id="rdv" class="rdv-section">
+        <h2>Prise de Rendez-vous / Demande de Devis</h2>
+        <form id="rdvForm" action="https://formsubmit.co/emmaz1969@gmail.com.fr" method="POST" class="rdv-form">
+            <div class="form-group">
+                <label for="nom">Nom Complet *</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telephone">Téléphone *</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="06 00 00 00 00" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Adresse Email *</label>
+                <input type="email" id="email" name="email" placeholder="votre.email@exemple.fr" required>
+            </div>
+
+            <div class="form-group">
+                <label for="service">Type de prestation *</label>
+                <select id="service" name="service" required>
+                    <option value="">-- Choisissez un service --</option>
+                    <option value="particulier">Nettoyage Particulier / Logement</option>
+                    <option value="conciergerie">Conciergerie / Airbnb</option>
+                    <option value="chantier">Fin de Chantier / Déménagement</option>
+                    <option value="vitres">Vitrerie / Véranda</option>
+                    <option value="autre">Autre demande</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Date souhaitée *</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ville">Ville / Localisation (ex: Quimper, Douarnenez...) *</label>
+                <input type="text" id="ville" name="ville" placeholder="Ex: Quimper" required>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="message">Détails de la demande</label>
+                <textarea id="message" name="message" rows="4" placeholder="Indiquez la superficie, les spécificités de votre demande..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Confirmer la demande de RDV</button>
+            <div id="formFeedback" class="form-feedback"></div>
+        </form>
+<div class="social-links">
+    <!-- WhatsApp -->
+    <a href="https://wa.me/+330666562366" target="_blank" class="social-btn whatsapp">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+    </a>
+
+    <!-- Facebook -->
+    <a href="https://facebook.com/votre-page" target="_blank" class="social-btn facebook">
+        <i class="fa-brands fa-facebook"></i> Facebook
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://instagram.com/votre-compte" target="_blank" class="social-btn instagram">
+        <i class="fa-brands fa-instagram"></i> Instagram
+    </a>
+</div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2026 Princesse Net - Entreprise de Nettoyage à Quimper et Alentours. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
